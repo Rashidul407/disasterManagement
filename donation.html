@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="crisis.html">Crisis</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Donate to Disaster Management Fund</h1>
+        <form id="donationForm">
+            <label for="donationAmount">Donation Amount:</label>
+            <input type="number" id="donationAmount" name="donationAmount" required>
+            <button type="submit">Donate</button>
+        </form>
+
+        <h2>Daily Donations:</h2>
+        <canvas id="donationChart"></canvas>
+    </main>
+
+    <script src="js/donation.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="crisis.html">Crisis</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Crisis List</h1>
+        <ul id="crisisList"></ul>
+
+        <h2>Add a New Crisis</h2>
+        <form id="crisisForm">
+            <label for="crisisTitle">Crisis Title:</label>
+            <input type="text" id="crisisTitle" required>
+
+            <label for="crisisLocation">Location:</label>
+            <input type="text" id="crisisLocation" required>
+
+            <label for="crisisSeverity">Severity:</label>
+            <select id="crisisSeverity">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <button type="submit">Add Crisis</button>
+        </form>
+    </main>
+
+    <script src="js/crisis.js"></script>
+</body>
+</html>
